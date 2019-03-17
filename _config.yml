@@ -79,9 +79,11 @@ theme: indigo  #indigo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:luoshupeng/luoshupeng.github.com.git
-  branch: master
   message:  my git blog
+  repo: 
+    github: git@github.com:luoshupeng/luoshupeng.github.com.git,master
+    gitee: git@gitee.com:luoshupeng/luoshupeng.git,master
+  #branch: master
 
 
 # Feed
