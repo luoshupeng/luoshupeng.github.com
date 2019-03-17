@@ -89,7 +89,7 @@ toc:
   list_number: true  # 是否显示数字排序
 
 # 文章页留言内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
-postMessage: 文章原始链接：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a><br/>由于能力有限，若有错误或者不当之处，还请大家批评指正，一起学习交流！
+postMessage: 文章原始链接：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, '') %></a><br/>由于能力有限，若有错误或者不当之处，还请大家批评指正，一起学习交流！<br/>本文首发于<a href="http://ctnet.xyz" target="_blank">http://ctnet.xyz</a>，备份地址有<a href="http://luoshupeng.github.io" target="_blank">github</a>， <a href="http://luoshupeng.gitee.io" target="_blank">gitee</a>。
 
 # 站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
 cnzz: false
