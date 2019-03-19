@@ -14,25 +14,29 @@
     
     
     
-    <title>Hello World | 畅通网络 | 用代码看世界</title>
+    <title>Spring Boot 2.0 多数据源编程 | 畅通网络 | 用代码看世界</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content>
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="JAVA,C#,Spring,Code">
+    <meta name="keywords" content="Spring Boot">
+    <meta name="description" content="Spring Boot 2.0 多数据源编程在Spring Boot 1.5.x之前，多数据源编程已经有很多教程和例子了，比如恒宇少年的博客还有程序猿DD的博客，我就是在两位大拿的教程下学习的。   但是在升级到Spring Boot 2.0后，一些配置及用法有了变化，如果不小心就会碰到“jdbcUrl is required with driverClassName.”的错误，详细错误信息可以查">
+<meta name="keywords" content="Spring Boot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://luoshupeng.github.io/20190315/hello-world.html">
+<meta property="og:title" content="Spring Boot 2.0 多数据源编程">
+<meta property="og:url" content="http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html">
 <meta property="og:site_name" content="畅通网络">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Spring Boot 2.0 多数据源编程在Spring Boot 1.5.x之前，多数据源编程已经有很多教程和例子了，比如恒宇少年的博客还有程序猿DD的博客，我就是在两位大拿的教程下学习的。   但是在升级到Spring Boot 2.0后，一些配置及用法有了变化，如果不小心就会碰到“jdbcUrl is required with driverClassName.”的错误，详细错误信息可以查">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-14T00:30:35.631Z">
+<meta property="og:image" content="https://static.oschina.net/uploads/img/201803/20153845_U7aE.png">
+<meta property="og:image" content="https://static.oschina.net/uploads/img/201803/20154124_5Gos.png">
+<meta property="og:image" content="https://static.oschina.net/uploads/img/201803/20154840_c2bk.jpg">
+<meta property="og:updated_time" content="2019-03-19T06:23:06.649Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Spring Boot 2.0 多数据源编程">
+<meta name="twitter:description" content="Spring Boot 2.0 多数据源编程在Spring Boot 1.5.x之前，多数据源编程已经有很多教程和例子了，比如恒宇少年的博客还有程序猿DD的博客，我就是在两位大拿的教程下学习的。   但是在升级到Spring Boot 2.0后，一些配置及用法有了变化，如果不小心就会碰到“jdbcUrl is required with driverClassName.”的错误，详细错误信息可以查">
+<meta name="twitter:image" content="https://static.oschina.net/uploads/img/201803/20153845_U7aE.png">
     
         <link rel="alternate" type="application/atom+xml" title="畅通网络" href="/atom.xml">
     
@@ -141,7 +145,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Hello World</div>
+        <div class="flex-col header-title ellipsis">Spring Boot 2.0 多数据源编程</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -163,13 +167,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Hello World</h1>
+        <h1 class="title">Spring Boot 2.0 多数据源编程</h1>
         <h5 class="subtitle">
             
-                <time datetime="2019-03-15T01:06:49.792Z" itemprop="datePublished" class="page-time">
-  2019-03-15
+                <time datetime="2019-03-19T06:21:31.000Z" itemprop="datePublished" class="page-time">
+  2019-03-19
 </time>
 
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Spring-Boot/">Spring Boot</a></li></ul>
 
             
         </h5>
@@ -186,19 +192,21 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Spring-Boot-2-0-多数据源编程"><span class="post-toc-number">1.</span> <span class="post-toc-text">Spring Boot 2.0 多数据源编程</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-hello-world" class="post-article article-type-post fade" itemprop="blogPost">
+<article id="post-Spring-Boot-2-0-多数据源编程" class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Hello World</h1>
+        <h1 class="post-card-title">Spring Boot 2.0 多数据源编程</h1>
         <div class="post-meta">
-            <time class="post-time" title="2019-03-15 09:06:49" datetime="2019-03-15T01:06:49.792Z" itemprop="datePublished">2019-03-15</time>
+            <time class="post-time" title="2019-03-19 14:21:31" datetime="2019-03-19T06:21:31.000Z" itemprop="datePublished">2019-03-19</time>
 
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Spring-Boot/">Spring Boot</a></li></ul>
+
 
 
             
@@ -209,15 +217,21 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <h1 id="Spring-Boot-2-0-多数据源编程"><a href="#Spring-Boot-2-0-多数据源编程" class="headerlink" title="Spring Boot 2.0 多数据源编程"></a>Spring Boot 2.0 多数据源编程</h1><p>在Spring Boot 1.5.x之前，多数据源编程已经有很多教程和例子了，比如<a href="https://www.jianshu.com/p/9f812e651319" target="_blank" rel="noopener">恒宇少年的博客</a>还有<a href="http://blog.didispace.com/springbootmultidatasource/" target="_blank" rel="noopener">程序猿DD的博客</a>，我就是在两位大拿的教程下学习的。  </p>
+<p>但是在升级到Spring Boot 2.0后，一些配置及用法有了变化，如果不小心就会碰到“jdbcUrl is required with driverClassName.”的错误，详细错误信息可以查看<a href="https://www.oschina.net/question/221134_2275771" target="_blank" rel="noopener">这里</a>。  </p>
+<p>我经过一番努力，查找资料，终于找到了解决办法，在这里分享出来，省得后来者再去查找资料。  </p>
+<p>第一种方法：<br>在配置文件中使用spring.datasource.jdbc-url，而不是通常使用的spring.datasource.url。<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://static.oschina.net/uploads/img/201803/20153845_U7aE.png" alt="输入图片说明" title="在这里输入图片标题">
+                </div>
+                <div class="image-caption">在这里输入图片标题</div>
+            </figure><br><strong>在这里也请大佬们帮忙解释下spring.datasource.jdbc-url和spring.datasource.url的区别。</strong>  </p>
+<p>第二种方法：<br>在数据源配置时使用DataSourceProperties方法。<br><img src="https://static.oschina.net/uploads/img/201803/20154124_5Gos.png" alt="输入图片说明" title="在这里输入图片标题">  </p>
+<p>最后，我的微信号是chinesedragon，二维码在最后，欢迎朋友们共同学习。  </p>
+<p><a href="https://gitee.com/shupengluo/SpringBoot2.0-MultiDataSource" target="_blank" rel="noopener">GITEE源码https://gitee.com/shupengluo/SpringBoot2.0-MultiDataSource</a><br><a href="https://github.com/luoshupeng/SpringBoot2.0-MultiDataSource" target="_blank" rel="noopener">GITHUB源码https://github.com/luoshupeng/SpringBoot2.0-MultiDataSource</a>  </p>
+<p><a href="https://docs.spring.io/spring-boot/docs/2.0.0.RELEASE/reference/htmlsingle/#howto-two-datasources" target="_blank" rel="noopener"><strong>参考资料https://docs.spring.io/spring-boot/docs/2.0.0.RELEASE/reference/htmlsingle/#howto-two-datasources</strong></a>  </p>
+<p><img src="https://static.oschina.net/uploads/img/201803/20154840_c2bk.jpg" alt="输入图片说明" title="在这里输入图片标题"></p>
 
         </div>
 
@@ -226,12 +240,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-03-14T00:30:35.631Z" itemprop="dateUpdated">2019-03-14 08:30:35</time>
+    最后更新时间：<time datetime="2019-03-19T06:23:06.649Z" itemprop="dateUpdated">2019-03-19 14:23:06</time>
 </span><br>
 
 
         
-        文章原始链接：<a href="/20190315/hello-world.html" target="_blank" rel="external">http://luoshupeng.github.io/20190315/hello-world.html</a><br>由于能力有限，若有错误或者不当之处，还请大家批评指正，一起学习交流！<br>本文首发于<a href="http://ctnet.xyz" target="_blank">http://ctnet.xyz</a>，备份地址有<a href="http://luoshupeng.github.io" target="_blank">github</a>， <a href="http://luoshupeng.gitee.io" target="_blank">gitee</a>。
+        文章原始链接：<a href="/20190319/Spring-Boot-2-0-多数据源编程.html" target="_blank" rel="external">http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html</a><br>由于能力有限，若有错误或者不当之处，还请大家批评指正，一起学习交流！<br>本文首发于<a href="http://ctnet.xyz" target="_blank">http://ctnet.xyz</a>，备份地址有<a href="http://luoshupeng.github.io" target="_blank">github</a>， <a href="http://luoshupeng.gitee.io" target="_blank">gitee</a>。
         
     </div>
     
@@ -252,6 +266,8 @@
 
         <div class="post-footer">
             
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Spring-Boot/">Spring Boot</a></li></ul>
+
 
             
 <div class="page-share-wrap">
@@ -260,7 +276,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://luoshupeng.github.io/20190315/hello-world.html&title=《Hello World》 — 畅通网络&pic=http://luoshupeng.github.io/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html&title=《Spring Boot 2.0 多数据源编程》 — 畅通网络&pic=http://luoshupeng.github.io/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -270,22 +286,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://luoshupeng.github.io/20190315/hello-world.html&title=《Hello World》 — 畅通网络&source=Java,C#,网站,信息技术,工程技术,项目管理," data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html&title=《Spring Boot 2.0 多数据源编程》 — 畅通网络&source=Java,C#,网站,信息技术,工程技术,项目管理," data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://luoshupeng.github.io/20190315/hello-world.html" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — 畅通网络&url=http://luoshupeng.github.io/20190315/hello-world.html&via=http://luoshupeng.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Spring Boot 2.0 多数据源编程》 — 畅通网络&url=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html&via=http://luoshupeng.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://luoshupeng.github.io/20190315/hello-world.html" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -424,7 +440,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://luoshupeng.github.io/20190315/hello-world.html&title=《Hello World》 — 畅通网络&pic=http://luoshupeng.github.io/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html&title=《Spring Boot 2.0 多数据源编程》 — 畅通网络&pic=http://luoshupeng.github.io/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -434,22 +450,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://luoshupeng.github.io/20190315/hello-world.html&title=《Hello World》 — 畅通网络&source=Java,C#,网站,信息技术,工程技术,项目管理," data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html&title=《Spring Boot 2.0 多数据源编程》 — 畅通网络&source=Java,C#,网站,信息技术,工程技术,项目管理," data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://luoshupeng.github.io/20190315/hello-world.html" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — 畅通网络&url=http://luoshupeng.github.io/20190315/hello-world.html&via=http://luoshupeng.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Spring Boot 2.0 多数据源编程》 — 畅通网络&url=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html&via=http://luoshupeng.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://luoshupeng.github.io/20190315/hello-world.html" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://luoshupeng.github.io/20190319/Spring-Boot-2-0-多数据源编程.html" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -460,7 +476,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKElEQVR42u3ay66DMAxF0f7/T3Onla6g+9hQNfFmhCoashhYfuT1wtfxdr3/8v+Zs+fP1rx+y82XDBkylmUcl1fKOPsXX5+vIEOGjGmM64BIQiffFomWfG8yZMiQcZ32kaCc8mTIkCHjLkYalO8qlWXIkDGZQYpMEnz5OtcrPFiLy5AhY0EGD4Xfv39kviFDhoylGEd49VtmfPAZ7EqGDBlbM3iA67TYaoC03JUhQ8Y0Rie8dhpn/KMEp8xkyJCxEYMfAuNbrB3IqO1BhgwZMxm8sPyQtIVRsbaODBkydmV0/swTylqhG+xBhgwZWzMIgBSfnRKUg4ulrAwZMhZn8Ffyr5Ie/OJvP72XIUPGAEbnyEWK7zx5+tFlyJAxhsGPdtXGn5zEi9h45iBDhowFGbVBI0/+akMCTpIhQ8Y0Rq1NRtpzabu/NmyQIUPGBEanNcaPa9Tac2n6KEOGjJ0YaTv+Q4MefAhyf0MtLkOGjI0YvBDtp4bp77X2nwwZMnZltHLJ8FgGGYgWdyVDhowBjHRIwEvffoqJ0kcZMmQMYKTbraWDwYEJPKOUIUPG3owjvHjTP00lefoY198yZMhYnJGGuc4LavPV4mELGTJkbMeoBdn0xU8EXBkyZExj1AIff54fyCgGbhkyZMgAjbNaKdsJ1mjKKkOGjJGMWh1Mgmxr8CBDhowBDFLEpkdLObjWhpMhQ8Ycxr15V9rWT8Pul9JHGTJk/ArjD89EslBuwzP1AAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACwklEQVR42u3awU5jMQwF0P7/T4M0K6TqtffaL50uTlYIaMjJIja2H494/fxbr3/6d+V7Pv/+1W75zvXCw8PDGx39aj1v/fz16+9sznN1xcmZ8fDw8E7zXgeDltcGjHyf/Mx4eHh438DLA8bs4lowHh4e3vfz2qc/CQxt+o6Hh4f3PbykGNGu1599HU4258HDw8M7zWsbYN/w9cH+Hh4eHt6iq54//W0xIv/UJjjh4eHhneDNmv15SXeToCcF5egS8fDw8I7xZoNNbZMsOVBeqoj2x8PDwzvGa9v5OSY5XFv8zRN0PDw8vHO8fTsqKTHMmlhHmlt4eHh4I16SIs/a+UkpIS8H5yWJIpnGw8PDG/GSZzf5aZuIzwqyw+CBh4eHd4C3z0Xz57tN1vejCXh4eHgneG0jfzZSkDzo+QAWHh4e3v/i7RtXedE2T9bbovBlKMLDw8M7xmuf5rZlNaPORrvw8PDwPslrH+JNQXaWgteDWXh4eHjHeHk6O2uD3dX6yttseHh4eOd4yXZ54tv+mVkwmA0W4OHh4d3LS9Lltlk1m1zYBJ430Q8PDw/vMK89XH4dm9DSNuHw8PDwTvDy1lTbwi8e7vX/AdHoAB4eHt5hXl4UyMu+m2v6KdcwwuDh4eGl81GP2XZtQba9uGg4YNPlw8PDw1vw2sJEXrbYl4PbMscwQ8fDw8Mree0fmJUw2jQ9v+g3LTQ8PDy8j/Pyp38zYrUZO4hGB/Dw8PBu4m3Ko8lDP0uO21Lv5Wfx8PDwDvDyNUus8z1nBZF2wgoPDw/vLl4SDJKj5LvNriwJDG/mI/Dw8PBu5bXtqzzmtOn4LNhcnhAPDw/vC3iz9lU+aNWm3XUDDA8PD++DvE37f1PAba8VDw8P7zO8/CmfDRbMihF5keKR3AceHh7eTbxZsyofLJiNIyTDAbM0HQ8PD2/B+wX6+9pPf5pHtQAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
