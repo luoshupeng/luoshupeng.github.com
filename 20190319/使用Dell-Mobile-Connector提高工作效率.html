@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>使用Dell Mobile Connector提高工作效率 | 畅通网络 | 用代码看世界</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Dell Mobile Connector,日常工作">
+    <meta name="description" content="使用Dell Mobile Connector提高工作效率最近看《网络迷踪》，里面的人物可以在Mac电脑上打电话、发信息，真的让我很惊奇，google了一下，发现如果要实现那种情况，需要苹果全家桶。但以Windows作为工作环境的我，使用苹果全家桶几乎是不可能的。于是又google了一下，我发现Dell给出了解决方案，这就是Dell Mobile Connect。 什么是Dell Mobile C">
+<meta name="keywords" content="Dell Mobile Connector,日常工作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Dell Mobile Connector提高工作效率">
+<meta property="og:url" content="http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html">
+<meta property="og:site_name" content="畅通网络">
+<meta property="og:description" content="使用Dell Mobile Connector提高工作效率最近看《网络迷踪》，里面的人物可以在Mac电脑上打电话、发信息，真的让我很惊奇，google了一下，发现如果要实现那种情况，需要苹果全家桶。但以Windows作为工作环境的我，使用苹果全家桶几乎是不可能的。于是又google了一下，我发现Dell给出了解决方案，这就是Dell Mobile Connect。 什么是Dell Mobile C">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-19T06:49:31.522Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用Dell Mobile Connector提高工作效率">
+<meta name="twitter:description" content="使用Dell Mobile Connector提高工作效率最近看《网络迷踪》，里面的人物可以在Mac电脑上打电话、发信息，真的让我很惊奇，google了一下，发现如果要实现那种情况，需要苹果全家桶。但以Windows作为工作环境的我，使用苹果全家桶几乎是不可能的。于是又google了一下，我发现Dell给出了解决方案，这就是Dell Mobile Connect。 什么是Dell Mobile C">
+    
+        <link rel="alternate" type="application/atom+xml" title="畅通网络" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">罗树鹏</h5>
+          <a href="mailto:shupengluo@gmail.com" title="shupengluo@gmail.com" class="mail">shupengluo@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/luoshupeng" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/luoshuepng" target="_blank">
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://gitee.com/shupengluo" target="_blank">
+                <i class="icon icon-lg icon-git"></i>
+                Gitee
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/atom.xml" target="_blank">
+                <i class="icon icon-lg icon-rss"></i>
+                Rss
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about">
+                <i class="icon icon-lg icon-weixin"></i>
+                About
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">使用Dell Mobile Connector提高工作效率</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">使用Dell Mobile Connector提高工作效率</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-03-19T06:47:38.000Z" itemprop="datePublished" class="page-time">
+  2019-03-19
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用Dell-Mobile-Connector提高工作效率"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用Dell Mobile Connector提高工作效率</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#什么是Dell-Mobile-Connect"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">什么是Dell Mobile Connect</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第一步，下载Dell-Mobile-Connector驱动"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">第一步，下载Dell Mobile Connector驱动</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第二步，下载Dell-Mobile-Connect-UWP程序"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">第二步，下载Dell Mobile Connect UWP程序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第三步，连接手机"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">第三步，连接手机</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#引用"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">引用</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-使用Dell-Mobile-Connector提高工作效率" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">使用Dell Mobile Connector提高工作效率</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-03-19 14:47:38" datetime="2019-03-19T06:47:38.000Z" itemprop="datePublished">2019-03-19</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="使用Dell-Mobile-Connector提高工作效率"><a href="#使用Dell-Mobile-Connector提高工作效率" class="headerlink" title="使用Dell Mobile Connector提高工作效率"></a>使用Dell Mobile Connector提高工作效率</h1><p>最近看《网络迷踪》，里面的人物可以在Mac电脑上打电话、发信息，真的让我很惊奇，google了一下，发现如果要实现那种情况，需要苹果全家桶。但以Windows作为工作环境的我，使用苹果全家桶几乎是不可能的。于是又google了一下，我发现Dell给出了解决方案，这就是Dell Mobile Connect。</p>
+<h2 id="什么是Dell-Mobile-Connect"><a href="#什么是Dell-Mobile-Connect" class="headerlink" title="什么是Dell Mobile Connect"></a>什么是Dell Mobile Connect</h2><p>Dell Mobile Connect可以无线连通 iOS、Android 和 Windows 三大平台，它不仅仅只是给你推送个来电或信息的通知，而是实实在在地让电脑手机连通协同工作，从而实现直接在 Windows 10 电脑上拨打/接听电话、收发短消息、查看联系人 (通讯录)，以及显示手机的推送通知。<a href="https://www.iplaysoft.com/dell-mobile-connect.html" target="_blank" rel="noopener">https://www.iplaysoft.com/dell-mobile-connect.html</a> 有介绍。<br>Dell Mobile Connect可以说解决了一个我的痛点，</p>
+<h2 id="第一步，下载Dell-Mobile-Connector驱动"><a href="#第一步，下载Dell-Mobile-Connector驱动" class="headerlink" title="第一步，下载Dell Mobile Connector驱动"></a>第一步，下载Dell Mobile Connector驱动</h2><p>我的电脑是Dell XPS 9560，可以从DELL官网下载驱动，地址是 <a href="https://www.dell.com/support/home/cn/zh/cnbsd1/product-support/product/xps-15-9560-laptop/drivers" target="_blank" rel="noopener">https://www.dell.com/support/home/cn/zh/cnbsd1/product-support/product/xps-15-9560-laptop/drivers</a> 或者 <a href="https://www.dell.com/support/home/cn/zh/cnbsd1/drivers/driversdetails?driverId=6P0DG&amp;osCode=WT64A&amp;productCode=xps-15-9560-laptop" target="_blank" rel="noopener">https://www.dell.com/support/home/cn/zh/cnbsd1/drivers/driversdetails?driverId=6P0DG&amp;osCode=WT64A&amp;productCode=xps-15-9560-laptop</a>, 安装驱动。</p>
+<h2 id="第二步，下载Dell-Mobile-Connect-UWP程序"><a href="#第二步，下载Dell-Mobile-Connect-UWP程序" class="headerlink" title="第二步，下载Dell Mobile Connect UWP程序"></a>第二步，下载Dell Mobile Connect UWP程序</h2><p>这个是UWP程序，但Microsoft Store中国区是没法下载的，我上传到百度网盘了，大家可以共享下.<br>链接: <a href="https://pan.baidu.com/s/1F9BWo4ck0PpVrPtMokQ-sQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1F9BWo4ck0PpVrPtMokQ-sQ</a> 提取码: p2n2<br>使用PowerShell打开如下命令进行安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Add-AppxPackage -Path .\ScreenovateTechnologies.DellMobileConnect_1.2.6056.0_neutral_~_0vhbc3ng4wbp0.AppxBundle -DependencyPath .\Microsoft.VCLibs.140.00.UWPDesktop_14.0.25426.0_x64__8wekyb3d8bbwe.Appx</span><br></pre></td></tr></table></figure></p>
+<p>安装后可以在开始菜单中打开Dell Mobile Connect快捷方式。</p>
+<h2 id="第三步，连接手机"><a href="#第三步，连接手机" class="headerlink" title="第三步，连接手机"></a>第三步，连接手机</h2><p>我使用的是华为安卓手机，直接在华为应用市场内下载Dell Mobile Connect，打开蓝牙，安装成功后会出现连接码。在Windows10上打开Dell Mobile Connect，输入连接码，与手机连接成功后，即可在电脑上操作手机了，不用离开电脑，提高工作效率，爽歪歪</p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p><a href="https://www.iplaysoft.com/dell-mobile-connect.html" target="_blank" rel="noopener">https://www.iplaysoft.com/dell-mobile-connect.html</a><br><a href="https://www.reddit.com/r/Dell/comments/8zvn3u/howto_install_dell_mobile_connect_even_if_your/" target="_blank" rel="noopener">https://www.reddit.com/r/Dell/comments/8zvn3u/howto_install_dell_mobile_connect_even_if_your/</a></p>
+</blockquote>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-03-19T06:49:31.522Z" itemprop="dateUpdated">2019-03-19 14:49:31</time>
+</span><br>
+
+
+        
+        文章原始链接：<a href="/20190319/使用Dell-Mobile-Connector提高工作效率.html" target="_blank" rel="external">http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html</a><br>由于能力有限，若有错误或者不当之处，还请大家批评指正，一起学习交流！<br>本文首发于<a href="http://ctnet.xyz" target="_blank">http://ctnet.xyz</a>，备份地址有<a href="http://luoshupeng.github.io" target="_blank">github</a>， <a href="http://luoshupeng.gitee.io" target="_blank">gitee</a>。
+        
+    </div>
+    
+    <footer>
+        <a href="http://luoshupeng.github.io">
+            <img src="/img/avatar.png" alt="罗树鹏">
+            罗树鹏
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dell-Mobile-Connector/">Dell Mobile Connector</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常工作/">日常工作</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html&title=《使用Dell Mobile Connector提高工作效率》 — 畅通网络&pic=http://luoshupeng.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html&title=《使用Dell Mobile Connector提高工作效率》 — 畅通网络&source=Java,C#,网站,信息技术,工程技术,项目管理," data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《使用Dell Mobile Connector提高工作效率》 — 畅通网络&url=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html&via=http://luoshupeng.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/20190319/Spring-Boot-2-0-多数据源编程.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Spring Boot 2.0 多数据源编程</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "mTAVEIfHMK9NHQjqmOrE5Ay3-gzGzoHsz",
+            appKey: "NVb1sSHBfsJf1Tr1Yalw0kQ6",
+            avatar: "mm",
+            placeholder: "也许应该说点什么",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        给我加个鸡腿~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：1<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：0<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>罗树鹏 &copy; 2019</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">豫ICP备18015571号-1</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html&title=《使用Dell Mobile Connector提高工作效率》 — 畅通网络&pic=http://luoshupeng.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html&title=《使用Dell Mobile Connector提高工作效率》 — 畅通网络&source=Java,C#,网站,信息技术,工程技术,项目管理," data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《使用Dell Mobile Connector提高工作效率》 — 畅通网络&url=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html&via=http://luoshupeng.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADQ0lEQVR42u3awXLiMBAE0Pz/T7PXpLI23SOTwuL5RBET64nDMD36+oqvx7fr+zvnd/6+f/Z/kju/XnFhY2Nj34T9OL2OFnG+xN8Lal+vbOK5BRsbG3tX9nlhSBaUFJukphy9Tp5VFDlsbGxs7PhTbWk83+K2BGJjY2Njn2PaO2c5z/lzsbGxsbHzMtMWs/Vmox0wvCRLw8bGxn579vpy3+f1S+bb2NjY2G/MfpRXUsBmrcisgM0ubGxs7J3YeQFYekBwxCcPg2ZDZWxsbOxPYLdxUr6gc1J+NGelffrPO9jY2NhbsNsIPi9X5+9Hg9iFw0DFPAQbGxt7I3YCmDUYs0AqaYfaAQY2Njb2fuyVUKZtGNogaRZ1FYeKsLGxsbdj501F3q4ko99k+65tabCxsbF3Yrfj0rblmMX9+Ra0w4Mf4wFsbGzsLdhtWJOE9XmZbJ+VPyV6IjY2NvZ27Pynf1tg8sYjj5zawoaNjY29N/uq5iEvVOdLSWKpqNmYJWrY2NjYt2JfG+KvjBzadmU2SHiSpWFjY2PfnL1S0vLhbjtCuCqoetJ7YWNjY9+WnfwyzwcAs4hqZZuW2iFsbGzsLdjr5aFNbFaO/rSHew6N2NjY2Juy1wOjvxkGzIYHPz6FjY2NvSm7LUivW1a+cfmAoWhFsLGxsW/IXomBcmQ0go0jqvw6LGDY2NjYW7DzkcBVh3WSSCsfAyTX4eZiY2Njfwy7jfJnA+PZELctrhfMt7GxsbFvxZ6FSm0hXHmdfwHFSSVsbGzsW7HbQW/bnLRNTn4EM7/ngvk2NjY29huz86M27cGdPEiajShmTUt0hggbGxv7tuy8jLXjgZWDPm0I9cKGBBsbG/vt2ckDripjeYifh1b1IAEbGxt7U3bbMLT/Id+ylQ2Ntg8bGxt7C/ajvPKWI9+gNsBqhwRPvmdsbGzsm7NnUVF+NKdtKtbbldl2Y2NjY9+dnR+gyTdiJSRKBgb51hz+FRsbG3s7dlsY8m3Kx7Er62lLIzY2NvYns2ex/iw2aje3KLfY2NjYH8+etRDrg4E2kMLGxsb+HHZSKtojmLMQaiWuSgYY2NjY2Pux80FvEgOtb2JeimarwsbGxt6I/Q9eJjUAXiRAewAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

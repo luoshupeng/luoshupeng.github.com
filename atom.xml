@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://luoshupeng.github.io/"/>
-  <updated>2019-03-19T06:23:06.649Z</updated>
+  <updated>2019-03-19T06:49:31.522Z</updated>
   <id>http://luoshupeng.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Dell Mobile Connector提高工作效率</title>
+    <link href="http://luoshupeng.github.io/20190319/%E4%BD%BF%E7%94%A8Dell-Mobile-Connector%E6%8F%90%E9%AB%98%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87.html"/>
+    <id>http://luoshupeng.github.io/20190319/使用Dell-Mobile-Connector提高工作效率.html</id>
+    <published>2019-03-19T06:47:38.000Z</published>
+    <updated>2019-03-19T06:49:31.522Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用Dell-Mobile-Connector提高工作效率"><a href="#使用Dell-Mobile-Connector提高工作效率" class="headerlink" title="使用Dell Mobile Connector提高工作效率"></a>使用Dell Mobile Connector提高工作效率</h1><p>最近看《网络迷踪》，里面的人物可以在Mac电脑上打电话、发信息，真的让我很惊奇，google了一下，发现如果要实现那种情况，需要苹果全家桶。但以Windows作为工作环境的我，使用苹果全家桶几乎是不可能的。于是又google了一下，我发现Dell给出了解决方案，这就是Dell Mobile Connect。</p><h2 id="什么是Dell-Mobile-Connect"><a href="#什么是Dell-Mobile-Connect" class="headerlink" title="什么是Dell Mobile Connect"></a>什么是Dell Mobile Connect</h2><p>Dell Mobile Connect可以无线连通 iOS、Android 和 Windows 三大平台，它不仅仅只是给你推送个来电或信息的通知，而是实实在在地让电脑手机连通协同工作，从而实现直接在 Windows 10 电脑上拨打/接听电话、收发短消息、查看联系人 (通讯录)，以及显示手机的推送通知。<a href="https://www.iplaysoft.com/dell-mobile-connect.html" target="_blank" rel="noopener">https://www.iplaysoft.com/dell-mobile-connect.html</a> 有介绍。<br>Dell Mobile Connect可以说解决了一个我的痛点，</p><h2 id="第一步，下载Dell-Mobile-Connector驱动"><a href="#第一步，下载Dell-Mobile-Connector驱动" class="headerlink" title="第一步，下载Dell Mobile Connector驱动"></a>第一步，下载Dell Mobile Connector驱动</h2><p>我的电脑是Dell XPS 9560，可以从DELL官网下载驱动，地址是 <a href="https://www.dell.com/support/home/cn/zh/cnbsd1/product-support/product/xps-15-9560-laptop/drivers" target="_blank" rel="noopener">https://www.dell.com/support/home/cn/zh/cnbsd1/product-support/product/xps-15-9560-laptop/drivers</a> 或者 <a href="https://www.dell.com/support/home/cn/zh/cnbsd1/drivers/driversdetails?driverId=6P0DG&amp;osCode=WT64A&amp;productCode=xps-15-9560-laptop" target="_blank" rel="noopener">https://www.dell.com/support/home/cn/zh/cnbsd1/drivers/driversdetails?driverId=6P0DG&amp;osCode=WT64A&amp;productCode=xps-15-9560-laptop</a>, 安装驱动。</p><h2 id="第二步，下载Dell-Mobile-Connect-UWP程序"><a href="#第二步，下载Dell-Mobile-Connect-UWP程序" class="headerlink" title="第二步，下载Dell Mobile Connect UWP程序"></a>第二步，下载Dell Mobile Connect UWP程序</h2><p>这个是UWP程序，但Microsoft Store中国区是没法下载的，我上传到百度网盘了，大家可以共享下.<br>链接: <a href="https://pan.baidu.com/s/1F9BWo4ck0PpVrPtMokQ-sQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1F9BWo4ck0PpVrPtMokQ-sQ</a> 提取码: p2n2<br>使用PowerShell打开如下命令进行安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Add-AppxPackage -Path .\ScreenovateTechnologies.DellMobileConnect_1.2.6056.0_neutral_~_0vhbc3ng4wbp0.AppxBundle -DependencyPath .\Microsoft.VCLibs.140.00.UWPDesktop_14.0.25426.0_x64__8wekyb3d8bbwe.Appx</span><br></pre></td></tr></table></figure></p><p>安装后可以在开始菜单中打开Dell Mobile Connect快捷方式。</p><h2 id="第三步，连接手机"><a href="#第三步，连接手机" class="headerlink" title="第三步，连接手机"></a>第三步，连接手机</h2><p>我使用的是华为安卓手机，直接在华为应用市场内下载Dell Mobile Connect，打开蓝牙，安装成功后会出现连接码。在Windows10上打开Dell Mobile Connect，输入连接码，与手机连接成功后，即可在电脑上操作手机了，不用离开电脑，提高工作效率，爽歪歪</p><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote><p><a href="https://www.iplaysoft.com/dell-mobile-connect.html" target="_blank" rel="noopener">https://www.iplaysoft.com/dell-mobile-connect.html</a><br><a href="https://www.reddit.com/r/Dell/comments/8zvn3u/howto_install_dell_mobile_connect_even_if_your/" target="_blank" rel="noopener">https://www.reddit.com/r/Dell/comments/8zvn3u/howto_install_dell_mobile_connect_even_if_your/</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;使用Dell-Mobile-Connector提高工作效率&quot;&gt;&lt;a href=&quot;#使用Dell-Mobile-Connector提高工作效率&quot; class=&quot;headerlink&quot; title=&quot;使用Dell Mobile Connector提高工作效率&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="Dell Mobile Connector" scheme="http://luoshupeng.github.io/tags/Dell-Mobile-Connector/"/>
+    
+      <category term="日常工作" scheme="http://luoshupeng.github.io/tags/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Spring Boot 2.0 多数据源编程</title>
