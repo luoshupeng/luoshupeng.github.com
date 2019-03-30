@@ -12,7 +12,9 @@ categories: Github
 
 # Android
 
-# Python
+# Python  
+* [https://github.com/CriseLYJ/awesome-python-login-model](https://github.com/CriseLYJ/awesome-python-login-model) python模拟登陆一些大型网站  
+* [https://github.com/CriseLYJ/Python-crawler-tutorial-starts-from-zero](https://github.com/CriseLYJ/Python-crawler-tutorial-starts-from-zero) python爬虫教程
 
 # Visual Studio (Visual Studio Code)
 * [https://github.com/nondanee/vsc-netease-music](https://github.com/nondanee/vsc-netease-music)  VSCode网易云音乐插件  
@@ -32,3 +34,4 @@ categories: Github
 
 # 其它
 * [https://github.com/bestony/logoly](https://github.com/bestony/logoly) PornHub风格的Logo图标生成器  
+* [https://github.com/diyhi/bbs](https://github.com/diyhi/bbs)  巡云轻论坛系统
