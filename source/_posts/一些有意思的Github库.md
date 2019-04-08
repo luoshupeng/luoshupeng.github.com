@@ -35,3 +35,8 @@ categories: Github
 # 其它
 * [https://github.com/bestony/logoly](https://github.com/bestony/logoly) PornHub风格的Logo图标生成器  
 * [https://github.com/diyhi/bbs](https://github.com/diyhi/bbs)  巡云轻论坛系统
+* [https://github.com/wb14123/seq2seq-couplet](https://github.com/wb14123/seq2seq-couplet) 用深度学习对对联  
+* [https://github.com/pwxcoo/chinese-xinhua](https://github.com/pwxcoo/chinese-xinhua)  中华新华字典数据库。包括歇后语，成语，词语，汉字。
+* [https://github.com/TranslucentTB/TranslucentTB](https://github.com/TranslucentTB/TranslucentTB)  一个让 Windows 任务栏透明的小程序
+* [https://github.com/hovancik/stretchly](https://github.com/hovancik/stretchly)  break time reminder app  
+* 
