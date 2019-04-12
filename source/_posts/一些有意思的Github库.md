@@ -32,6 +32,9 @@ categories: Github
 # Chrome插件
 * [https://github.com/Kenshin/simpread](https://github.com/Kenshin/simpread) 简悦 ( SimpRead ) - 让你瞬间进入沉浸式阅读的扩展   
 
+# Electron项目
+* [https://github.com/aitexiaoy/Strawberry-Wallpaper](https://github.com/aitexiaoy/Strawberry-Wallpaper) Strawberry Wallpaper 草莓壁纸
+
 # 其它
 * [https://github.com/bestony/logoly](https://github.com/bestony/logoly) PornHub风格的Logo图标生成器  
 * [https://github.com/diyhi/bbs](https://github.com/diyhi/bbs)  巡云轻论坛系统
@@ -39,4 +42,8 @@ categories: Github
 * [https://github.com/pwxcoo/chinese-xinhua](https://github.com/pwxcoo/chinese-xinhua)  中华新华字典数据库。包括歇后语，成语，词语，汉字。
 * [https://github.com/TranslucentTB/TranslucentTB](https://github.com/TranslucentTB/TranslucentTB)  一个让 Windows 任务栏透明的小程序
 * [https://github.com/hovancik/stretchly](https://github.com/hovancik/stretchly)  break time reminder app  
-* 
+* [https://github.com/Awesome-Windows/Awesome](https://github.com/Awesome-Windows/Awesome)  Windows应用软件合集  
+* [https://github.com/iCHAIT/awesome-macOS](https://github.com/iCHAIT/awesome-macOS) macOS应用软件合集  
+* [https://github.com/serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps) macOS上的开源软件应用合集  
+* [https://github.com/zhaoolee/ChromeAppHeroes](https://github.com/zhaoolee/ChromeAppHeroes) chrome插件合集  
+* [https://github.com/1c7/chinese-independent-developer](https://github.com/1c7/chinese-independent-developer) 中国独立开发者项目列表  
