@@ -31,6 +31,11 @@ categories: Github
 
 # Chrome插件
 * [https://github.com/Kenshin/simpread](https://github.com/Kenshin/simpread) 简悦 ( SimpRead ) - 让你瞬间进入沉浸式阅读的扩展   
+* [https://github.com/ovity/octotree](https://github.com/ovity/octotree)  GitHub辅助插件  
+![](https://github.com/ovity/octotree/raw/v3/docs/chrome-github.png)
+
+# Vue.js 相关
+* [https://github.com/janyin/vue-wangyiyun-music](https://github.com/janyin/vue-wangyiyun-music) vue cli 3构建的网易云音乐web app (适合新手)
 
 # Electron项目
 * [https://github.com/aitexiaoy/Strawberry-Wallpaper](https://github.com/aitexiaoy/Strawberry-Wallpaper) Strawberry Wallpaper 草莓壁纸
